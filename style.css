@@ -123,6 +123,7 @@ p:hover{
     border-radius: 10px;
     animation: fadein 2s;
     padding-right: 10px;
+    min-height: 400px;
 }
 
 .left img{
