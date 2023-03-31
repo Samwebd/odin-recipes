@@ -13,7 +13,14 @@
     }
 }
 
-
+@keyframes SlideRight {
+    0% {
+        transform: translateX(-150px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
 
 h1,h2,h3 h4,h5,h6{
     font-weight: 300;
@@ -25,27 +32,19 @@ h1{
     font-family: 'Josefin Sans'; 
 } 
 
+h3 {
+    padding-left: 12px;
+}
+
 .heading{
-    background-image: -webkit-linear-gradient(left, #88d5bd 25%, #a1ca9d 37.5%, #ccac81, #d59e88 62.5%, #88d5bd 75%);
-    background-image: linear-gradient(90deg, #88d5bd 25%, #a1ca9d 37.5%, #ccac81, 62.5%, #88d5bd 75%);
-    background-position: right center;
-    background-size: 400% auto;
+    background: -webkit-linear-gradient(#88D5BD, #D59E88);
     -webkit-background-clip: text;
-    background-clip: text;
-    color: #88d5bd;
     -webkit-text-fill-color: transparent;
-    -text-fill-color: transparent;
-    transition: color 200ms linear;
     animation: fadein 3s ease;
   
 }
 
-.heading:hover{
-    background-position: left center;
-  color: #b9bc88;
-  transition: background-position 2000ms ease-out;
 
-}
 
 html{
 
@@ -67,7 +66,7 @@ body {
 
 .heading{
     font-size: 62px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Josefin Sans";
 }
 
 a {
@@ -107,4 +106,36 @@ p{
 
 p:hover{
     transform: scale(1.12);
+}
+
+.ingredients{
+    background-color: #d3f0e7d5;
+    border: #d588a0 3px solid;
+    border-radius: 10px;
+    animation: fadein 2s;
+    padding-right: 0px;
+    width: 350px;
+}
+
+.steps{
+    background-color: #d3f0e7d5;
+    border: #d588a0 3px solid;
+    border-radius: 10px;
+    animation: fadein 2s;
+    padding-right: 10px;
+}
+
+.left img{
+    animation: SlideRight 0.8s ease-in-out;
+}
+
+.backbutton a{
+    color: white;
+    font-size: 25px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+.backbutton a:hover{
+    color:#d588a0;
 }
