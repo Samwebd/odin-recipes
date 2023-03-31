@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+@keyframes fadein {
+    from { opacity: 0}
+    to   { opacity: 1}
+}
+@keyframes Slide_Up {
+    0% {
+        transform: translateY(250px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+h1,h2,h3 h4,h5,h6{
+    font-weight: 300;
+    text-align: center;
+    color: #88D5BD;
+}
+
+h1{ 
+    font-family: 'Josefin Sans'; 
+} 
+
+.heading{
+    background-image: -webkit-linear-gradient(left, #88d5bd 25%, #a1ca9d 37.5%, #ccac81, #d59e88 62.5%, #88d5bd 75%);
+    background-image: linear-gradient(90deg, #88d5bd 25%, #a1ca9d 37.5%, #ccac81, 62.5%, #88d5bd 75%);
+    background-position: right center;
+    background-size: 400% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #88d5bd;
+    -webkit-text-fill-color: transparent;
+    -text-fill-color: transparent;
+    transition: color 200ms linear;
+    animation: fadein 3s ease;
+  
+}
+
+.heading:hover{
+    background-position: left center;
+  color: #b9bc88;
+  transition: background-position 2000ms ease-out;
+
+}
+
+html{
+
+    font-family: 'Josefin Sans'; 
+    
+}
+
+body {
+    background-color: #006967;
+    
+}
+
+.item img:hover {
+    transform: scale(1.05);
+    transition:all ease-in-out;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #d588a0
+}
+
+.heading{
+    font-size: 62px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+div img{
+    width: 350px;
+    height: 400px;
+    border-radius: 15px;
+    border: #d588a0 5px solid;
+}
+
+.content {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 25px;
+    gap: 20px
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    animation: Slide_Up 1.4s ease-out;
+}
+
+p{
+    color: #D3EDE4;
+    font-family: "Josefin Sans";
+}
+
+p:hover{
+    transform: scale(1.12);
+}
